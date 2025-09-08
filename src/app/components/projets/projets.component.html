@@ -1,0 +1,130 @@
+<section id="projets" class="projets section">
+    <div class="container">
+        <h2 class="section-title">Mes Projets</h2>
+        
+        <div class="projets-intro">
+            <p>Découvrez quelques-unes de mes réalisations techniques et professionnelles. Chaque projet illustre ma capacité à concevoir et développer des applications web sécurisées, évolutives et adaptées aux besoins métiers.</p>
+        </div>
+
+        <div class="projets-grid">
+
+            <!-- Projet 1: E-commerce Symfony + Stripe -->
+            <div class="projet-card">
+                <div class="projet-image">
+                    <div class="projet-carousel" id="carousel-0">
+                        <img src="images/ecom1.png" alt="E-commerce Symfony - Page d'accueil" class="projet-img" [class.active]="isActive(0, 0)">
+                        <img src="images/ecom2.png" alt="E-commerce Symfony - Page produit" class="projet-img" [class.active]="isActive(0, 1)">
+                        <img src="images/ecom3.png" alt="E-commerce Symfony - Paiement Stripe" class="projet-img" [class.active]="isActive(0, 2)">
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" (click)="prevSlide(0, $event)">‹</button>
+                        <button class="carousel-btn next" (click)="nextSlide(0, $event)">›</button>
+                    </div>
+                    <div class="projet-badge">Symfony & Stripe</div>
+                </div>
+                
+                <div class="projet-content">
+                    <h3>Site E-commerce de Livres</h3>
+                    <p class="projet-description">
+                        Développement d’une plateforme e-commerce pour la vente de livres avec système d’authentification, panier et intégration du paiement sécurisé Stripe.
+                    </p>
+                    
+                    <div class="projet-features">
+                        <span class="feature-tag">Symfony</span>
+                        <span class="feature-tag">Stripe</span>
+                        <span class="feature-tag">Panier</span>
+                        <span class="feature-tag">Sécurité</span>
+                    </div>
+                    
+                    <div class="projet-links">
+                        <a href="https://github.com/Mariemjlassi/SymBook" target="_blank" class="projet-link">
+                            <i class="fab fa-github"></i>
+                            Code Source
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projet 2: Calcul des Taxes Locatives (CNI) -->
+<div class="projet-card">
+    <div class="projet-image">
+        <div class="projet-carousel" id="carousel-3">
+            <img src="images/cni1.png" alt="CNI - Dashboard" class="projet-img" [class.active]="isActive(1, 0)">
+            <img src="images/cni2.png" alt="CNI - Formulaire de calcul" class="projet-img" [class.active]="isActive(1, 1)">
+            <img src="images/cni3.png" alt="CNI - Résultat calcul" class="projet-img" [class.active]="isActive(1, 2)">
+
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-btn prev" (click)="prevSlide(1, $event)">‹</button>
+            <button class="carousel-btn next" (click)="nextSlide(1, $event)">›</button>
+        </div>
+        <div class="projet-badge">Spring Boot & Spring Security</div>
+    </div>
+    
+    <div class="projet-content">
+        <h3>Calcul des Taxes Locatives (CNI)</h3>
+        <p class="projet-description">
+            Projet réalisé lors de mon stage au CNI : développement d’une application web pour le calcul des taxes locatives des terrains non bâtis, avec architecture modulaire et sécurisation via Spring Security.
+        </p>
+        
+        <div class="projet-features">
+            <span class="feature-tag">Spring Boot</span>
+            <span class="feature-tag">Spring Security</span>
+            <span class="feature-tag">Architecture modulaire</span>
+            <span class="feature-tag">PostgreSQL</span>
+        </div>
+
+        <!-- Ajout de la section Code Source -->
+        <div class="projet-links">
+            <a href="https://github.com/Mariemjlassi/ProjetStagePerfectionnement" target="_blank" class="projet-link">
+                <i class="fab fa-github"></i>
+                Code Source
+            </a>
+        </div>
+    </div>
+</div>
+
+
+            <!-- Projet 3: Application RH OrgaRH (PFE) -->
+            <div class="projet-card">
+                <div class="projet-image">
+                    <div class="projet-carousel" id="carousel-2">
+                        <img src="images/rh1.png" alt="OrgaRH - Dashboard" class="projet-img" [class.active]="isActive(2, 0)">
+                        <img src="images/rh2.png" alt="OrgaRH - Gestion des employés" class="projet-img" [class.active]="isActive(2, 1)">
+                        <img src="images/rh3.png" alt="OrgaRH - Reporting et prédiction" class="projet-img" [class.active]="isActive(2, 2)">
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" (click)="prevSlide(2, $event)">‹</button>
+                        <button class="carousel-btn next" (click)="nextSlide(2, $event)">›</button>
+                    </div>
+                    <div class="projet-badge">Spring Boot, Angular & IA</div>
+                </div>
+                
+                <div class="projet-content">
+                    <h3>OrgaRH - Application RH</h3>
+                    <p class="projet-description">
+                        Projet de fin d’études : Développement d’une application RH complète pour la gestion des employés, formations, compétences et reporting intelligent (chatbot & IA prédictive).
+                    </p>
+                    
+                    <div class="projet-features">
+                        <span class="feature-tag">Spring Boot</span>
+                        <span class="feature-tag">Angular</span>
+                        <span class="feature-tag">PrimeNG</span>
+                        <span class="feature-tag">RASA</span>
+                        <span class="feature-tag">TensorFlow</span>
+                        <span class="feature-tag">Scrum</span>
+                    </div>
+                    
+                    <div class="projet-links">
+    <span class="projet-link disabled">
+        <i class="fas fa-lock"></i>
+        Code privé (confidentiel)
+    </span>
+</div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

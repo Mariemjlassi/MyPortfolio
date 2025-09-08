@@ -1,0 +1,121 @@
+<section id="skills" class="skills section">
+  <div class="container">
+    <h2 class="section-title">Mes Compétences</h2>
+
+    
+    <!-- Introduction -->
+    <div class="skills-intro">
+      <p>Je maîtrise un large éventail de technologies modernes qui me permettent de créer des solutions innovantes et efficaces.</p>
+    </div>
+
+    <!-- Technologies sous forme de nuage de tags -->
+    <div class="technologies-cloud">
+      <div class="cloud-container">
+        <div *ngFor="let tech of getAllTechnologies()" 
+             class="tech-tag"
+             [style.--size]="getTechSize(tech.level)">
+          <div class="tech-icon">
+            <i [class]="getTechIcon(tech.name)"></i>
+          </div>
+          <span>{{ tech.name }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.skills {
+  padding: 80px 0;
+  
+  background: #ffffff;
+  
+}
+.gradient-text {
+  background: linear-gradient(90deg, #00c6ff, #6f42c1, #ff1493);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.skills-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.technologies-cloud {
+  margin-top: 30px;
+}
+
+.cloud-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.tech-tag {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform: scale(calc(0.8 + (var(--size, 1) * 0.2)));
+}
+
+.tech-tag:hover {
+  transform: scale(calc(0.9 + (var(--size, 1) * 0.2))) translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tech-icon {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #4a6cf7;
+}
+
+.tech-tag span {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .cloud-container {
+    gap: 10px;
+  }
+  
+  .tech-tag {
+    padding: 8px 15px;
+  }
+}
+</style>

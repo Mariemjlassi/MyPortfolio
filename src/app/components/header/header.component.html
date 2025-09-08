@@ -1,0 +1,57 @@
+<header [class.scrolled]="isScrolled" [class.menu-open]="isMenuOpen">
+  <div class="container">
+    <!-- Logo avec design moderne -->
+    <div class="logo">
+      <a routerLink="/" (click)="scrollTo('home', $event)">
+        <div class="logo-mark">
+          <span class="logo-initial">{{ profileData.name.charAt(0) }}</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">{{ profileData.name.split(' ')[0] }}</span>
+          <span class="logo-title">Développeuse Fullstack</span>
+        </div>
+      </a>
+    </div>
+    
+    <!-- Navigation principale -->
+    <nav [class.active]="isMenuOpen">
+      <ul class="nav-links">
+        <li class="nav-item" *ngFor="let item of navItems">
+          <a 
+            [href]="'#' + item.id" 
+            (click)="scrollTo(item.id, $event)" 
+            class="nav-link"
+            [class.active]="activeSection === item.id">
+            <span class="link-icon">
+              
+            </span>
+            <span class="link-text">{{ item.text }}</span>
+            <span class="link-indicator"></span>
+          </a>
+        </li>
+        
+        <!-- Bouton CV avec badge -->
+        <li class="nav-item cv-item">
+          <a href="#" (click)="downloadCV($event)" class="nav-link cv-link">
+            <span class="link-icon">
+              <i class="fas fa-download"></i>
+            </span>
+            <span class="link-text">CV</span>
+            
+            <span class="link-indicator"></span>
+          </a>
+        </li>
+      </ul>
+      
+      <!-- Indicateur de section active -->
+      <div class="nav-indicator" [style.transform]="'translateX(' + indicatorPosition + 'px)'"></div>
+    </nav>
+    
+    <!-- Bouton menu mobile -->
+    <div class="menu-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
+      <span class="toggle-line line-1"></span>
+      <span class="toggle-line line-2"></span>
+      <span class="toggle-line line-3"></span>
+    </div>
+  </div>
+</header>

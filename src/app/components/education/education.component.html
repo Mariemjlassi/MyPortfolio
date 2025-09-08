@@ -1,0 +1,120 @@
+<section class="education">
+  <h2 class="section-title">Mon Parcours Académique</h2>
+  <p class="section-subtitle">
+    Découvrez mon parcours éducatif, mes expériences professionnelles et mes engagements associatifs
+  </p>
+
+  <!-- Navigation par onglets -->
+  <div class="education-tabs">
+    <button type="button" class="tab-button" [class.active]="isTabActive('formations')" (click)="showTab('formations')">
+      Formations
+    </button>
+    <button type="button" class="tab-button" [class.active]="isTabActive('stages')" (click)="showTab('stages')">
+      Expériences Professionnelles
+    </button>
+    <button type="button" class="tab-button" [class.active]="isTabActive('engagements')" (click)="showTab('engagements')">
+      Engagements Associatifs
+    </button>
+  </div>
+
+  <!-- Formations -->
+  <div *ngIf="isTabActive('formations')" class="tab-content">
+    <div class="education-cards">
+      <div class="education-card">
+        <div class="card-period">2020 - 2021</div>
+        <h3 class="card-title">Lycée Borj el Amri, Ibn Mandhour</h3>
+        <h4 class="card-subtitle">Baccalauréat en Sciences Expérimentales</h4>
+        <p class="card-description">
+          Obtention du baccalauréat avec mention, spécialité sciences expérimentales.
+        </p>
+      </div>
+
+      <div class="education-card">
+        <div class="card-period">2022 - 2025</div>
+        <h3 class="card-title">Institut Supérieur des Études Technologiques de Radès</h3>
+        <h4 class="card-subtitle">Licence en Technologies de l'Information</h4>
+        <p class="card-description">
+          Formation complète en technologies de l'information avec spécialisation en développement des systèmes d'information.
+        </p>
+        
+      </div>
+
+      <div class="education-card">
+        <div class="card-period">2025 - Présent</div>
+        <h3 class="card-title">Cycle Ingénieur</h3>
+        <h4 class="card-subtitle">iTeam University</h4>
+        <p class="card-description">
+          Étudiante en cycle ingénieur, approfondissant mes compétences en
+          <strong>architecture logicielle, intelligence artificielle et sécurité des systèmes</strong>.
+        </p>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Stages -->
+  <div *ngIf="isTabActive('stages')" class="tab-content">
+    <div class="education-cards">
+      <div class="stage-card">
+        <div class="stage-header">
+          <h3 class="stage-company">CNI</h3>
+          <span class="stage-period">Juin 2023 - Août 2023</span>
+        </div>
+        <p class="stage-description">
+          Développement d'une application web de gestion des ressources humaines avec Angular et Spring Boot.
+        </p>
+        <div class="stage-features">
+          <span class="feature-tag">Angular</span>
+          <span class="feature-tag">Spring Boot</span>
+          <span class="feature-tag">MySQL</span>
+        </div>
+      </div>
+
+      <div class="stage-card">
+        <div class="stage-header">
+          <h3 class="stage-company">ASSAD Batterie</h3>
+          <span class="stage-period">Jan 2024 - Avr 2024</span>
+        </div>
+        <p class="stage-description">
+          Conception et développement d'un système de gestion de stock avec interface responsive et tableaux de bord analytiques.
+        </p>
+        <div class="stage-features">
+          <span class="feature-tag">React</span>
+          <span class="feature-tag">Node.js</span>
+          <span class="feature-tag">MongoDB</span>
+          <span class="feature-tag">Spring Security</span>
+        </div>
+        <div class="stage-mention"><i class="fas fa-award"></i> Mention: Excellent</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Engagements associatifs -->
+  <div *ngIf="isTabActive('engagements')" class="tab-content">
+    <div class="engagement-grid">
+      <div class="engagement-card">
+        <div class="engagement-icon"><i class="fas fa-user-tie"></i></div>
+        <h3 class="engagement-title">Responsable RH</h3>
+        <p class="engagement-description">
+          Gestion des ressources humaines et organisation d'événements technologiques à IEEE Student Branch Radès.
+        </p>
+      </div>
+
+      <div class="engagement-card">
+        <div class="engagement-icon"><i class="fas fa-code"></i></div>
+        <h3 class="engagement-title">Développeuse Full-Stack</h3>
+        <p class="engagement-description">
+          Spécialisée dans la création d'applications web sécurisées avec Spring Boot et Angular.
+        </p>
+      </div>
+
+      <div class="engagement-card">
+        <div class="engagement-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3 class="engagement-title">Expertise en Sécurité</h3>
+        <p class="engagement-description">
+          Spécialisation dans la sécurisation d'applications via Spring Security et les bonnes pratiques.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

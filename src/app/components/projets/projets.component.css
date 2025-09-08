@@ -1,0 +1,358 @@
+.projets {
+  padding: 100px 0;
+  background: #ffffff;
+  position: relative;
+  overflow: hidden;
+  color: #131313;
+}
+
+.projets::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(45deg, #4255c1, #e83e8c);
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: float 8s ease-in-out infinite;
+}
+
+.projets::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #6f42c1, #e83e8c);
+  border-radius: 50%;
+  opacity: 0.1;
+  animation: float 6s ease-in-out infinite reverse;
+}
+
+.projets .container {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.projets-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #1a1a1a;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.projets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.projet-card {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  overflow: hidden;
+  
+  transition: all 0.4s ease;
+  position: relative;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(90, 88, 88, 0.1);
+}
+
+.projet-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.projet-image {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.projet-img {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  scroll-snap-align: start;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.projet-img.active {
+  opacity: 1;
+  position: relative;
+}
+
+.projet-carousel {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+
+.carousel-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  color: #111112;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn:hover {
+  background: #111112;
+  color: white;
+  transform: scale(1.1);
+}
+
+.projet-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: linear-gradient(90deg, #00c6ff, #6f42c1, #ff1493);;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.projet-content {
+  padding: 30px;
+}
+
+.projet-content h3 {
+  margin: 0 0 15px 0;
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.projet-description {
+  color: #171717;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.projet-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 25px;
+}
+
+.feature-tag {
+  background: rgb(36, 35, 35);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(111, 66, 193, 0.3);
+}
+
+.projet-links {
+  display: flex;
+  gap: 15px;
+}
+
+.projet-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: #eaeaea;
+  color: #222121;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.projet-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(130, 130, 131, 0.4);
+  background: #d0cfcf;
+  color: #222121;
+}
+
+.projet-img[src=""], 
+.projet-img:not([src]) {
+  display: none;
+}
+
+.projet-image:has(.projet-img[src=""]) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.projet-image:has(.projet-img[src=""])::before {
+  content: '🖼️ Image non disponible';
+  color: #adb5bd;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .projets-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .projet-card {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .projets {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .projet-image {
+    height: 200px;
+  }
+  
+  .projet-content {
+    padding: 20px;
+  }
+  
+  .projet-links {
+    flex-direction: column;
+  }
+  
+  .projet-link {
+    justify-content: center;
+  }
+  
+  .carousel-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projets-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .projet-features {
+    justify-content: center;
+  }
+  
+  .projet-links {
+    align-items: center;
+  }
+  
+  .projet-card {
+    margin: 0 10px;
+  }
+}
+
+/* Alternative si les images ne sont pas trouvées */
+.projet-placeholder {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+  color: #adb5bd;
+  padding: 20px;
+}
+
+.projet-placeholder i {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.projet-placeholder p {
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Empêcher le défilement horizontal involontaire */
+.projets-grid {
+  overflow: hidden;
+}
+
+/* S'assurer que les contrôles du carousel ne provoquent pas de défilement */
+.carousel-btn {
+  z-index: 10;
+  position: relative;
+}
+
+/* Amélioration de l'expérience tactile sur mobile */
+@media (max-width: 768px) {
+  .carousel-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.4rem;
+  }
+  
+  .projet-image {
+    touch-action: pan-y; /* Permet seulement le défilement vertical */
+  }
+}
+
+/* Animation plus fluide pour les transitions */
+.projet-img {
+  transition: opacity 0.3s ease-in-out;
+}
