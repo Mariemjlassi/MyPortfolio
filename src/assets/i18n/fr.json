@@ -1,0 +1,91 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "projets": "Projets",
+    "education": "Formation",
+    "contact": "Contact",
+    "cv": "CV"
+  },
+  "home": {
+    "title": "Développeuse Fullstack",
+    "welcome": "Enchantée, je suis",
+    "name": "Mariem Jlassi",
+    "subtitle": "Développeuse Full-Stack passionnée",
+    "description": "Passionnée par le développement Full Stack et la sécurité des applications, je conçois des solutions fiables, évolutives et sécurisées en utilisant Spring Boot, Spring Security et Angular. Je m'attache à produire du code de qualité, à assurer la scalabilité des applications, et à mettre en place des mesures de protection efficaces contre les failles de sécurité.",
+    "contactBtn": "Me contacter",
+    "skillsBtn": "Voir mes compétences"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "name": "Mariem Jlassi",
+    "role": "Développeuse Fullstack",
+    "codeComment": "// Prêt pour de nouveaux défis !",
+    "description": "Je suis une développeuse fullstack passionnée par la création d'applications web sécurisées, évolutives et performantes. Avec une expertise en Angular, Node.js et les bonnes pratiques de sécurité, je m'engage à fournir des solutions robustes qui répondent aux besoins spécifiques de chaque client.",
+    "approach": "Mon approche combine une attention aux détails techniques avec une compréhension des objectifs business, garantissant que chaque projet que je livre est à la fois techniquement excellent et commercialement pertinent.",
+    "frontend": "Développement Frontend",
+    "backend": "Architecture Backend",
+    "security": "Sécurité Applications",
+    "scalable": "Solutions Évolutives",
+    "maintainable": "Code Maintenable"
+  },
+  "skills": {
+    "title": "Mes Compétences",
+    "description": "Je maîtrise un large éventail de technologies modernes qui me permettent de créer des solutions innovantes et efficaces."
+  },
+  "projects": {
+    "title": "Mes Projets",
+    "description": "Découvrez quelques-unes de mes réalisations techniques et professionnelles. Chaque projet illustre ma capacité à concevoir et développer des applications web sécurisées, évolutives et adaptées aux besoins métiers.",
+    "viewCode": "Code Source",
+    "privateCode": "Code privé (confidentiel)",
+    "ecommerce": {
+      "title": "Site E-commerce de Livres",
+      "description": "Développement d'une plateforme e-commerce pour la vente de livres avec système d'authentification, panier et intégration du paiement sécurisé Stripe."
+    },
+    "cni": {
+      "title": "Calcul des Taxes Locatives (CNI)",
+      "description": "Projet réalisé lors de mon stage au CNI : développement d'une application web pour le calcul des taxes locatives des terrains non bâtis, avec architecture modulaire et sécurisation via Spring Security."
+    },
+    "orgaRh": {
+      "title": "OrgaRH - Application RH",
+      "description": "Projet de fin d'études : Développement d'une application RH complète pour la gestion des employés, formations, compétences et reporting intelligent (chatbot & IA prédictive)."
+    }
+  },
+  "education": {
+    "title": "Mon Parcours Académique",
+    "description": "Découvrez mon parcours éducatif, mes expériences professionnelles et mes engagements associatifs",
+    "bac": {
+      "period": "2020 - 2021",
+      "school": "Lycée Borj el Amri, Ibn Mandhour",
+      "diploma": "Baccalauréat en Sciences Expérimentales",
+      "details": "Obtention du baccalauréat avec mention, spécialité sciences expérimentales."
+    },
+    "licence": {
+      "period": "2022 - 2025",
+      "school": "Institut Supérieur des Études Technologiques de Radès",
+      "diploma": "Licence en Technologies de l'Information",
+      "details": "Formation complète en technologies de l'information avec spécialisation en développement des systèmes d'information."
+    },
+    "engineer": {
+      "period": "2025 - Présent",
+      "school": "Cycle Ingénieur",
+      "diploma": "iTeam University",
+      "details": "Étudiante en cycle ingénieur, approfondissant mes compétences en architecture logicielle, intelligence artificielle et sécurité des systèmes."
+    }
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "description": "Je suis ouverte aux nouvelles opportunités et collaborations. N'hésitez pas à me contacter !",
+    "email": "Email",
+    "phone": "Téléphone",
+    "location": "Localisation",
+    "interested": "Intéressé par mon profil ?",
+    "available": "Disponible pour de nouvelles opportunités",
+    "sendMessage": "Envoyez-moi un message et discutons de vos projets de développement.",
+    "messageBtn": "Envoyer un message"
+  },
+  "footer": {
+    "rights": "© 2025 Mariem Jlassi. Tous droits réservés."
+  }
+}

@@ -1,12 +1,12 @@
 /* Global Styles */
 :root {
-  --primary: #ff7eb9;
-  --secondary: #7afcff;
-  --accent1: #ff65a3;
-  --accent2: #feff9c;
-  --accent3: #fff740;
-  --dark: #5c2e47;
-  --light: #fffaf5;
+  --primary: #594100;
+  --secondary: #8A0000;
+  --accent1: #521C0D;
+  --accent2: #D5451B;
+  --accent3: #4B352A;
+  --dark: #1d1c1c;
+  --light: #f5f3f1;
   --transition: all 0.3s ease;
 }
 
@@ -16,13 +16,17 @@
   box-sizing: border-box;
 }
 
+/* Import déjà dans index.html */
+
+/* Global font */
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, var(--light) 0%, #ffe6f2 100%);
+  
   color: var(--dark);
   line-height: 1.6;
   overflow-x: hidden;
 }
+
 
 .container {
   max-width: 1200px;
@@ -51,7 +55,7 @@ body {
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background: linear-gradient(to right, var(--primary), var(--accent1));
+  background: gray;
   border-radius: 2px;
 }
 
