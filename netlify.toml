@@ -1,6 +1,9 @@
 [build]
+  publish = "dist/my-portfolio/browser"
   command = "ng build --configuration production"
-  publish = "dist/my-portfolio"
+
+[build.environment]
+  NODE_VERSION = "18"
 
 [[redirects]]
   from = "/*"
