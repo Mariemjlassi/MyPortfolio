@@ -113,8 +113,10 @@
 
 .code-line {
   line-height: 1.5;
-  white-space: pre;
+  white-space: pre-wrap; /* permet le retour à la ligne */
+  word-break: break-word; /* casse les mots trop longs */
 }
+
 
 .keyword { color: #569cd6; }
 .variable { color: #9cdcfe; }

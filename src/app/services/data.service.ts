@@ -29,7 +29,8 @@ getLanguageProgress(level: string): string {
       title: 'Développeuse Full-Stack',
       location: 'Borj el amri, Mannouba',
       email: 'jlassiimariem52@gmail.com',
-      aboutMe: "Passionnée par le développement Full Stack et la sécurité des applications, je conçois des solutions fiables, évolutives et sécurisées en utilisant Spring Boot, Spring Security et Angular. Je m'attache à produire du code de qualité, à assurer la scalabilité des applications, et à mettre en place des mesures de protection efficaces contre les failles de sécurité.",
+      aboutMe: "Élève ingénieure en informatique, passionnée par le développement Full-Stack et la sécurité des applications. J’aime concevoir des solutions web performantes, fiables et bien structurées en utilisant Spring Boot, Spring Security et Angular. Curieuse et rigoureuse, je m’efforce de produire un code propre et maintenable tout en respectant les bonnes pratiques du développement logiciel.",
+
       about: 'Développeuse Full-Stack avec une solide expérience dans la conception et le développement d\'applications web complètes. Spécialisée dans les technologies Java/Spring et Angular, avec une expertise particulière en sécurité des applications et méthodologies Agile.',
       skills: [
         { name: 'Java', level: 85, category: 'backend' },
