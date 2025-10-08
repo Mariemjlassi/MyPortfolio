@@ -126,8 +126,8 @@ export class HeaderComponent implements OnInit {
     
     if (this.isBrowser) {
       const link = document.createElement('a');
-      link.href = '/cv/CV_MariemJlassi.pdf';
-      link.download = 'CV_MariemJlassi.pdf';
+      link.href = '/cv/MariemJlassiCv.pdf';
+      link.download = 'MariemJlassiCv.pdf';
       link.target = '_blank';
       document.body.appendChild(link);
       link.click();
