@@ -11,7 +11,7 @@ import { FooterComponent } from './components/footer/footer.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements AfterViewInit, OnDestroy {
-  title = 'Abir Annabi - Portfolio';
+  title = 'Jlassi Mariem - Portfolio';
   private scrollTimeout: any;
 
   ngAfterViewInit() {
