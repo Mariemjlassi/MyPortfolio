@@ -7,41 +7,43 @@
         </div>
 
         <div class="projets-grid">
-
-            <!-- Projet 1: E-commerce Symfony + Stripe -->
+            <!-- Projet 3: Application RH OrgaRH (PFE) -->
             <div class="projet-card">
                 <div class="projet-image">
-                    <div class="projet-carousel" id="carousel-0">
-                        <img src="images/ecom1.png" alt="E-commerce Symfony - Page d'accueil" class="projet-img" [class.active]="isActive(0, 0)">
-                        <img src="images/ecom2.png" alt="E-commerce Symfony - Page produit" class="projet-img" [class.active]="isActive(0, 1)">
-                        <img src="images/ecom3.png" alt="E-commerce Symfony - Paiement Stripe" class="projet-img" [class.active]="isActive(0, 2)">
+                    <div class="projet-carousel" id="carousel-2">
+                        <img src="images/rh1.png" alt="OrgaRH - Dashboard" class="projet-img" [class.active]="isActive(2, 0)">
+                        <img src="images/rh2.png" alt="OrgaRH - Gestion des employés" class="projet-img" [class.active]="isActive(2, 1)">
+                        <img src="images/rh3.png" alt="OrgaRH - Reporting et prédiction" class="projet-img" [class.active]="isActive(2, 2)">
                     </div>
                     <div class="carousel-controls">
-                        <button class="carousel-btn prev" (click)="prevSlide(0, $event)">‹</button>
-                        <button class="carousel-btn next" (click)="nextSlide(0, $event)">›</button>
+                        <button class="carousel-btn prev" (click)="prevSlide(2, $event)">‹</button>
+                        <button class="carousel-btn next" (click)="nextSlide(2, $event)">›</button>
                     </div>
-                    <div class="projet-badge">Symfony & Stripe</div>
+                    <div class="projet-badge">Spring Boot, Angular & IA</div>
                 </div>
                 
                 <div class="projet-content">
-                    <h3>Site E-commerce de Livres</h3>
+                    <h3>OrgaRH - Application RH</h3>
                     <p class="projet-description">
-                        Développement d’une plateforme e-commerce pour la vente de livres avec système d’authentification, panier et intégration du paiement sécurisé Stripe.
+                        Projet de fin d’études : Développement d’une application RH complète pour la gestion des employés, formations, compétences et reporting intelligent (chatbot & IA prédictive).
                     </p>
                     
                     <div class="projet-features">
-                        <span class="feature-tag">Symfony</span>
-                        <span class="feature-tag">Stripe</span>
-                        <span class="feature-tag">Panier</span>
-                        <span class="feature-tag">Sécurité</span>
+                        <span class="feature-tag">Spring Boot</span>
+                        <span class="feature-tag">Angular</span>
+                        <span class="feature-tag">PrimeNG</span>
+                        <span class="feature-tag">RASA</span>
+                        <span class="feature-tag">TensorFlow</span>
+                        <span class="feature-tag">Scrum</span>
                     </div>
                     
                     <div class="projet-links">
-                        <a href="https://github.com/Mariemjlassi/SymBook" target="_blank" class="projet-link">
-                            <i class="fab fa-github"></i>
-                            Code Source
-                        </a>
-                    </div>
+    <span class="projet-link disabled">
+        <i class="fas fa-lock"></i>
+        Code privé (confidentiel)
+    </span>
+</div>
+
                 </div>
             </div>
 
@@ -84,46 +86,47 @@
     </div>
 </div>
 
-
-            <!-- Projet 3: Application RH OrgaRH (PFE) -->
+            <!-- Projet 1: E-commerce Symfony + Stripe -->
             <div class="projet-card">
                 <div class="projet-image">
-                    <div class="projet-carousel" id="carousel-2">
-                        <img src="images/rh1.png" alt="OrgaRH - Dashboard" class="projet-img" [class.active]="isActive(2, 0)">
-                        <img src="images/rh2.png" alt="OrgaRH - Gestion des employés" class="projet-img" [class.active]="isActive(2, 1)">
-                        <img src="images/rh3.png" alt="OrgaRH - Reporting et prédiction" class="projet-img" [class.active]="isActive(2, 2)">
+                    <div class="projet-carousel" id="carousel-0">
+                        <img src="images/ecom1.png" alt="E-commerce Symfony - Page d'accueil" class="projet-img" [class.active]="isActive(0, 0)">
+                        <img src="images/ecom2.png" alt="E-commerce Symfony - Page produit" class="projet-img" [class.active]="isActive(0, 1)">
+                        <img src="images/ecom3.png" alt="E-commerce Symfony - Paiement Stripe" class="projet-img" [class.active]="isActive(0, 2)">
                     </div>
                     <div class="carousel-controls">
-                        <button class="carousel-btn prev" (click)="prevSlide(2, $event)">‹</button>
-                        <button class="carousel-btn next" (click)="nextSlide(2, $event)">›</button>
+                        <button class="carousel-btn prev" (click)="prevSlide(0, $event)">‹</button>
+                        <button class="carousel-btn next" (click)="nextSlide(0, $event)">›</button>
                     </div>
-                    <div class="projet-badge">Spring Boot, Angular & IA</div>
+                    <div class="projet-badge">Symfony & Stripe</div>
                 </div>
                 
                 <div class="projet-content">
-                    <h3>OrgaRH - Application RH</h3>
+                    <h3>Site E-commerce de Livres</h3>
                     <p class="projet-description">
-                        Projet de fin d’études : Développement d’une application RH complète pour la gestion des employés, formations, compétences et reporting intelligent (chatbot & IA prédictive).
+                        Développement d’une plateforme e-commerce pour la vente de livres avec système d’authentification, panier et intégration du paiement sécurisé Stripe.
                     </p>
                     
                     <div class="projet-features">
-                        <span class="feature-tag">Spring Boot</span>
-                        <span class="feature-tag">Angular</span>
-                        <span class="feature-tag">PrimeNG</span>
-                        <span class="feature-tag">RASA</span>
-                        <span class="feature-tag">TensorFlow</span>
-                        <span class="feature-tag">Scrum</span>
+                        <span class="feature-tag">Symfony</span>
+                        <span class="feature-tag">Stripe</span>
+                        <span class="feature-tag">Panier</span>
                     </div>
                     
                     <div class="projet-links">
-    <span class="projet-link disabled">
-        <i class="fas fa-lock"></i>
-        Code privé (confidentiel)
-    </span>
-</div>
-
+                        <a href="https://github.com/Mariemjlassi/SymBook" target="_blank" class="projet-link">
+                            <i class="fab fa-github"></i>
+                            Code Source
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            
+
+
+            
+            
 
         </div>
     </div>

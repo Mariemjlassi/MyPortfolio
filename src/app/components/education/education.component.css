@@ -346,6 +346,50 @@
 }
 
 
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.impact-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-5px);
+}
+
+.impact-card h3 {
+  color: #131313;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.impact-card p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.impact-skills {
+  margin-top: 12px;
+}
+
+.impact-skills span {
+  display: inline-block;
+  background: #f2f0ff;
+  color: #6f42c1;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 6px;
+}
 
 
 

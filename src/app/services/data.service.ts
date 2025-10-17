@@ -107,4 +107,20 @@ getLanguageProgress(level: string): string {
       
     };
   }
+
+  getSkillDomains() {
+  return [
+    { name: 'Développement Full Stack', icon: 'fas fa-code', level: 90 },
+    { name: 'Sécurité Applicative (Spring Security, reCAPTCHA)', icon: 'fas fa-shield-alt', level: 85 },
+    { name: 'Architecture Modulaire & Scalable', icon: 'fas fa-layer-group', level: 80 },
+    { name: 'Design d’API REST & Documentation (Swagger)', icon: 'fas fa-network-wired', level: 75 },
+    { name: 'Tests & Qualité du Code (JUnit, Cypress)', icon: 'fas fa-vial', level: 80 },
+    { name: 'Intelligence Artificielle & Chatbot (TensorFlow, RASA)', icon: 'fas fa-brain', level: 70 },
+    { name: 'Bases de Données SQL / NoSQL', icon: 'fas fa-database', level: 85 },
+    { name: 'Agilité & Gestion de Projet (Scrum, Jira)', icon: 'fas fa-users-cog', level: 80 },
+    { name: 'UI/UX & Front-End Moderne (Angular, PrimeNG)', icon: 'fas fa-desktop', level: 85 },
+    { name: 'Versioning & Intégration (Git, CI/CD)', icon: 'fas fa-code-branch', level: 80 },
+  ];
+}
+
 }
