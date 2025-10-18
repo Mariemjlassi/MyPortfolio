@@ -46,4 +46,34 @@ export class EducationComponent {
   isTabActive(tabId: string): boolean {
     return this.activeTab === tabId;
   }
+
+  
+  technologies = [
+    // Frontend
+    { name: 'Angular', category: 'frontend' },
+    { name: 'React', category: 'frontend' },
+    { name: 'TypeScript', category: 'frontend' },
+    { name: 'HTML/CSS', category: 'frontend' },
+    
+    // Backend
+    { name: 'Node.js', category: 'backend' },
+    { name: 'Express', category: 'backend' },
+    { name: 'Python', category: 'backend' },
+    { name: 'Java', category: 'backend' },
+    
+    // Bases de données
+    { name: 'MySQL', category: 'database' },
+    { name: 'MongoDB', category: 'database' },
+    { name: 'PostgreSQL', category: 'database' },
+    
+    // Outils & DevOps
+    { name: 'Docker', category: 'tools' },
+    { name: 'Git', category: 'tools' },
+    { name: 'AWS', category: 'tools' },
+    { name: 'Jenkins', category: 'tools' }
+  ];
+
+  getTechnologiesByCategory(category: string) {
+    return this.technologies.filter(tech => tech.category === category);
+  }
 }
